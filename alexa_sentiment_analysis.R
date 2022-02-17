@@ -146,12 +146,3 @@ neg_rating_reviews <- reviews_new %>%
   count(word)
 wordcloud(neg_rating_reviews$word, neg_rating_reviews$n)
 
-
-
-# Brouillon
-# Corelation between rating and average sentiment
-cor.test(reviews$rating, reviews$ave_sentiment)
-summary(reviews_new)
-as.Date(reviews$date, "%d-%b-%Y")
-
-
